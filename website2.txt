@@ -1,0 +1,28 @@
+SANS SEC577 (Co Author)
+Virtualization Security Fundamentals. http://www.sans.org/security-training/virtualization-security-fundamentals-1412-mid
+
+SANS SEC579 (Co Author) Virtualization and Private Cloud Security - https://www.sans.org/security-training/virtualization-private-cloud-security-1651-mid
+
+Fiber Channel - Your Other Datacenter Network - http://2013.video.sector.ca/video/77018108
+
+Dude, Your Car is PWND! : Exploring and Exploiting Automotive OBD Networks (SANSFIRE 2012)
+https://isc.sans.edu/presentations/#sansfire
+
+FACEROUTE: Mapping and Harvesting Social Media Sites (SANSFIRE 2011, SECTOR 2011)
+https://isc.sans.edu/presentations/#sansfire
+
+Brains for Hire / Blame for Hire - The Life and Challenges of a Consulting Project Manager - http://www.sans.org/reading_room/whitepapers/leadership/brains-hire-blame-hire-life-challenges-consulting-project-manager_33358
+
+ITDOCS: One Admin’s Documentation is their Hacker’s Pentest - http://www.sans.org/reading_room/whitepapers/auditing/admins-documentation-hackers-pentest_33303
+
+IOSTOOLS:
+IOSMap - TCP and UDP port Scanning on Cisco IOS
+http://www.sans.org/reading_room
+
+IOSCAT - a port of Netcat running on Cisco IOS
+http://www.sans.org/reading_room
+http://sourceforge.net/projects/iostools/
+
+VPNSCAN - Extending the Audit and Compliance Perimeter - http://www.sans.org/reading_room/whitepapers/auditing/
+
+Specialties: Networking (Cisco or otherwise), Security Implementations, Asssessments, Audits and Penetration Testing, Scripting and System Task Automation, VMware, Network Virtualization, Linux, *nix, Citrix, C, BASH Scripting, Windows Scripting, VBScript, TCL, Python, Assembler, Powershell, FORTH
