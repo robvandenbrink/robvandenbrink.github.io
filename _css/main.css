@@ -1,0 +1,520 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, img, strong, ul, li, form, label, article, aside, footer, header, menu, nav, section, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, footer, header, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol {
+		list-style: none; }
+	ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+		
+		
+/*fonts*/
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('Montserrat-Regular.eot');
+  src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+       url('Montserrat-Regular.ttf') format('truetype'),
+       url('Montserrat-Regular.woff') format('woff'),
+       url('Montserrat-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+	
+	 /* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color: #0046eb;
+		font: 3em "Montserrat-Regular";
+		font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	
+	/* #Links
+================================================== */
+	a { color: inherit; text-decoration: none; outline: 0; }
+	a:visited { color: #a2bcf7; outline: 0; }
+	a:hover, a:focus { color: inherit; }
+	p a, p a:visited { line-height: inherit; }
+
+/* Site Colours
+	================================================== 
+Grey: #eaeaea;
+Dark Grey: #727171;
+Blue: #0046eb;
+
+*/
+
+
+/* #Basic Global Styles
+================================================== */
+
+
+body {
+		background: #eaeaea;
+		width: 100%;
+		height: auto;
+		font: 2em 'Montserrat-Regular';
+		color: #0046eb;
+		-webkit-text-size-adjust: 100%;
+		padding: 0px;
+		margin: 0px;		
+ }
+ 
+ .container {
+	 width: 100%;
+	 margin: auto;
+	 overflow: hidden;
+	 }
+ 	
+	
+	/* #Global Styles
+================================================== */		
+
+.logo {
+	
+	width: 5%;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+}
+
+nav {
+	width: 100%;
+	color: #0046eb;
+	text-align: right;
+}
+
+nav ul li {	
+	font-size: .55em;
+	display: inline-block;
+	text-transform: uppercase; 
+	padding-top: 6.5%;
+	padding-right: 1%;	
+	margin-right: 4%;
+	color: #0046eb;
+}
+
+
+.selected {
+	text-decoration:underline;
+	text-decoration-color: #0046eb;
+	color: #0046eb;
+}
+
+
+.icon {
+	display: none;
+}
+
+
+/* #Home Page Styles
+================================================== */
+
+#showcase {
+	
+	background:url('../_images/coherent_security_header_image.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: -100px;
+}
+
+#showcase h1 {
+	
+	
+	font-size: 1.75em;
+	margin-top: 300px;
+	margin-left: 60px;	
+	
+}
+
+#showcase p {
+	padding-left: 60px;
+	padding-bottom: 60px;
+	width: 40%; 
+	padding-top: 3%;
+	color: black;
+	font-size: .60em;
+	
+	
+	}
+
+#showcase-sales-copy{
+	width: 100%;
+	min-height: 400px;
+	background-image: linear-gradient(to right, #004efc , #003bd3);
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
+	}
+	
+#showcase-sales-copy h2{
+	color: white;
+	font-size: 1.5em;
+	margin-left: 60px;
+	}
+	
+#showcase-sales-copy p{
+	color: white;
+	font-size: .60em;
+	padding: 20px;
+	}
+	
+	
+.box {
+	width: 30%;
+	float: left;
+	color: white;
+	}
+	
+.box .btn-services {
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: .60em;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3%;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  color: #0046eb;
+
+}
+
+	
+#solutions {
+		background:url('../_images/coherent_security_gear_image.png') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: 60px;
+  min-height: 800px;
+  width: 30%;
+  float: left;
+  opacity: 0.4;
+ 
+}
+
+#showcase-solutions h2 {
+	font-size: 1em;
+	margin-top: 8%;
+	padding-bottom: 5%;
+ 
+}
+
+   
+#showcase-solutions li{
+	line-height: 1.5;
+	font-size: 1.25em;
+	padding-left: 15%;
+	color: black;
+	
+	}
+	
+#showcase-close img {
+	float: left;
+	width: 10%;
+	margin-left: 12%;
+	}
+	
+#showcase-close p {
+	margin-left: 35%;
+	font-size: .45em;
+	padding-top: 5%;
+	color: black;
+	padding-right: 10%;
+	}
+	
+	
+.btn {
+  border: none;
+  background-color: #0046eb;
+  padding: 14px 28px;
+  font-size: .60em;;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3%;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-bottom: 10%;
+}
+
+
+
+/* On mouse-over */
+.btn:hover {background: #727171;}
+
+.learnmore {color: white;}
+
+.uppercase {
+	text-transform:uppercase;
+	font-size: .50em;
+	padding-left: 1%;
+	font-weight:bold;
+	color: #0046eb;
+	}
+	
+#footer {
+	  background-color: #0046eb;
+	  margin-top: 60px;
+	 
+	}
+	
+#footer img {
+	  padding-left: 10%;
+	  width: 70%;
+	}
+
+.footer-box {
+	width: 30%;
+	float: left;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left:30px;
+	}
+	
+#footer ul {
+	  list-style-type: none;
+	}
+	
+#footer ul li {
+	 font-size: .65em;
+	}
+	
+
+
+/* #Services Page Styles
+================================================== */
+
+.services {
+ 
+  font-size: .65em;;
+  margin-top: 8%;
+  margin-left: 60px;
+  margin-bottom: 3%;
+  font-weight:bold;
+  
+ 
+}
+
+.services p{
+ 
+  font-size: .65em;
+  width: 45%;
+  color: black;
+  font-weight:300;
+  margin-top:3%;
+ 
+  
+}
+
+.services-box {
+	width: 26%;
+	background-image: linear-gradient(to right, #004efc , #003bd3);
+	margin-right: 3%;
+	margin-bottom: 4%;
+	float: left;
+	border: 2px solid #0046eb;;
+  	border-radius: 25px;
+	color: #ffffff;
+	box-shadow:10px 10px 18px 0px #c4c4ec;
+	display: block;
+	overflow:hidden;
+	}
+	
+.services-box h2{
+		color: white;
+		font-size: .55em;
+		width:90%; 
+		padding:5%; 
+		padding-left:8%;}
+		
+
+.products {
+	
+	overflow:hidden;
+	margin-left: 3%;}	
+	
+.services h1 {
+	padding-top: 3%;
+	}	
+	
+.services h2 {
+	font-size:1.75em;
+	padding-top: 1%;
+	}
+	
+.services-block {
+	float: left;
+	width: 45%;}
+
+
+/* Mobile Styles
+================================================== */	
+	
+@media screen and (max-width:768px) {
+.container{
+	margin-left: 0px;
+	}
+	
+#showcase h1 {
+	
+	font-size: 1.5em;
+	margin-top: 300px;
+	margin-left: 60px;	
+}
+
+#showcase {
+	margin-left: 0px;
+	}
+	
+.box {
+		
+	float: none;
+	text-align: center;
+	width: 100%;	
+	}
+		
+#showcase-sales-copy h2 {
+	
+	font-size: 1.25em;
+	margin-top: 30px;
+	margin-right: 60px;
+	text-align: center;	
+	}
+	
+#showcase-sales-copy p {
+	font-size: .50em;
+	padding: 10%;
+}
+
+#showcase-solutions ul li{
+	
+	font-size: .75em;
+	line-height: 1;
+	padding-left: 1%;
+	padding-bottom: 5%;
+}
+
+#showcase p {
+	padding-left: 60px;
+	padding-bottom: 60px;
+	padding-right: 60px;
+	width: 70%; 
+	padding-top: 3%;
+	color: black;
+	font-size: .60em;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 2px solid white;
+	border-radius: 25px;
+	}
+	
+.footer-box {
+	float: none;
+	width: 100%;
+	}
+	
+.footer-box img {
+	float: none;
+	width: 100%;
+	text-align: left;
+	}
+	
+.footer-box ul {
+	
+	text-align: left;
+	margin-top: 10%;
+	padding-left: 10%;	
+	}
+	
+.footer-box ul ul{
+	text-align: left;
+	margin-top: 0;
+	border: 2px solid red;
+	}
+	
+.services-box {
+	float: none;
+	width: 95%;
+}
+
+.services {
+	float: none;
+	width: 95%;
+}
+
+.services p {
+	float: none;
+	width: 80%;
+}
+
+.services-block {
+	float: none;
+	width: 80%;
+	}
+}
+
+/* nav button */
+@media screen and (max-width:950px) {
+  nav {
+	  padding-bottom: 3.5%;
+	  }
+   
+  
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+	margin-top: -20px;
+	}
+	
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	
+
+}
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+	position: relative;
+	text-align: right;
+	top: 30px;
+		
+		
+}
+  ul.topnav.responsive li a {
+    display: block;
+	margin-right: 6%;
+}
+}
+
+
+
