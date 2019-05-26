@@ -132,7 +132,7 @@ nav ul li {
 
 #showcase {
 	
-	background:url('../_images/coherent_security_header_image.png') no-repeat center center; 
+	background:url('../images/coherent_security_header_image.png') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -205,7 +205,7 @@ nav ul li {
 
 	
 #solutions {
-		background:url('../_images/coherent_security_gear_image.png') no-repeat center center; 
+		background:url('../images/coherent_security_gear_image.png') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
