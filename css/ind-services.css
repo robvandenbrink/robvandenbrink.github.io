@@ -170,9 +170,7 @@ nav ul li {
   }
 
 .services-block {
-	width: 40%;
-	float: left;
-	min-height: 500px;
+	width: 80%;
 	}
 
 .services h1 {
@@ -181,6 +179,7 @@ nav ul li {
   font-weight:bold;
   margin-top: 8%;
   margin-bottom: 3%;
+ 
 
 }
 
@@ -188,6 +187,7 @@ nav ul li {
 
 	 font-size: .85em;
   	font-weight:bold;
+	 margin-top: 3%;
 }
 
 .services p {
