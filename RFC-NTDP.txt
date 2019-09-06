@@ -1,0 +1,167 @@
+
+ 
+Home
+Services
+Publications
+Blog
+About Me
+
+
+Updated by: Rob VandenBrink
+
+Internet Engineering Task Force (IETF)                   PROPOSED STANDARD
+Request for Comments: RFC5905D                                Errata Exist
+Obsoletes: 1305, 4330, 5905                                 R. Vandenbrink
+Category: Standards Track                                   September 2019
+ISSN:                                                                DRAFT
+
+
+
+Network Timer Derby Protocol (NTDP): Protocol and Algorithms Specific
+
+Abstract
+
+The Network Time Protocol (NTP) is widely used to synchronize computer 
+clocks in the Internet. This document describes NTP version 4a, Network 
+Time Derby Protocol (NTDP), which is partially backwards compatible with NTP
+version 4 (NTPv4) described in RFC 5905, NTP Version 3 (NPTv3) described in
+RFC 1305, as well as previous versions of the protocol.
+
+NTDP is created for a mobile platform, namely a Derby Hat. NTDP uses 
+standard NTP protocols to obtain time from Servers. NTDP clients are meant 
+to acquire time primarily using their 5 senses.
+
+NTDP is unique in its output characteristics. When deployed on its intended
+platform, time and date are displayed in analogue format. The analogue 
+format is not prescribed, but the Reference Design for NTDP uses “dial” 
+style gauges for the analog display, however “arc” style gauges have also 
+been used in the development process. The critical criteria for NTDP is 
+that time be displayed in a non-digital format.
+
+NTDP is always implemented in local time, to facilitate calculation of time 
+to Adult Beverages (TTAB) for local users. When implemented as an NTDB 
+server, this implementation guidance should be maintained. Oops, I just 
+said “should” in an RFC – I meant “will be maintained”. It is the 
+responsibility of the NTDP client to associate themselves with an NTDP 
+server in their time zone.
+
+Protocol Versions:
+NTP4	RFC5905		Network Time Protocol Version 4
+NTBP	RFC5905B	Network Time Protocol - Ballpark
+NTPC	RFC5905C	Reserved for IPv5
+NTDP	RFC5905D	Network Time Protocol – Derby Hat
+
+Introduction
+
+Suggested Modes of Operation / Caveats in Further Development
+
+Further development of NTDP will be focused on different analogue display 
+formats. For instance, pumps could be used to vary pressure to display time. 
+Piezoelectric mechanisms could be used to drive audio or visible displays. 
+Note that for audio output, volume and frequency are both key 
+considerations. Too much volume could potentially make hat unwearable.  
+Too low a volume would make the time inaudible to any but the wearer of the 
+hat. 
+
+The use of hammers, especially to drive a “Test Your Strength” style 
+carnival gauge is discouraged, as NTDP is meant for a wearable (on the head)
+platform.
+
+Heat is another mechanism that could be used for NTDP. For third party 
+use of the output, this would need to be tied to a thermometer display of 
+some kind. Note again that range is important. If the range is too low or 
+too high, a temperature based implementation of NTDP can easily cause injury 
+to the wearer of the hat. In addition, the use of open flame in temperature 
+based implementations should be avoided, for that same reason.
+
+Constraints and Considerations
+
+Size Constraints
+
+All implementations of NTDP are intended for deployment on a Derby Hat 
+platform. This introduces a size constraint. All implementations must fit 
+on or in a reference sized hat, and all implementations must result in the 
+hat still being wearable.
+
+Safety Considerations
+
+As NTDP outputs are all analog, this means that usage by both the hat wearer
+and any third parties should be considered in the design and implementation 
+process.
+
+For instance:
+
+For heat based implementations, the temperature range used to represent the 
+various time scopes must be kept to within temperatures considered safe and 
+comfortable for the wearer of the hat.
+
+“Length of Open Flame” (LOF) should be discouraged as an output format in 
+most implementations for the safety of both the wearer and third parties.
+
+Similarly, any pressure or hammer based implementations should consider the 
+safety of the hat wearer. It’s desired that the hat wearer should survive 
+the “noon experience”.
+
+Audio implementations should consider that all parties will need likely want
+to use their hearing after experiencing the NTDP output. It is recommended 
+that NTDP output be kept to within a range deemed safe. For instance, a 60-
+70db range has been used during protocol development, and we’re all still 
+fine. If someone would answer that phone we’d be fine anyway! Be sure to 
+use accurate acoustic measurement equipment to define “safe”.
+
+Usability Considerations
+
+As NTDP outputs are all analog, this means that usage by both the hat wearer 
+and any third parties should be considered in the design and implementation 
+process.
+
+For instance:
+
+Audio implementations based on frequency should be implemented within the 
+range of human hearing. NTDP is not meant for dogs or whales. Also 
+consider the shortened audio range that most security professionals have, as
+many are of advanced years, and most have damaged their hearing in any of 
+several ways during mis-spent youth.
+
+Audio implementations based on amplitude must consider that third parties 
+will want to stay outside of the personal space of the hat wearer. 
+Implementations should be in the 60db range (outside the hat) for optimal 
+third party use. See “Safety Considerations” during both the design and 
+implementation processes.
+
+The use of NTDP as a Time Server
+
+NTDP can also be used as a time server, as it fully implements the “Ballpark
+NTP” (NTP-B) standard. Note however that the nature of the output should 
+remain analog. For instance “around noon” is an appropriate output, as is 
+“time for a beer” and “why aren’t you at work?”. “Quarter after two” is 
+considered an appropriate output, but only if it is meant to represent 
+everything from 14:05 to 14:25.
+
+NTDP is referenced using a standard restful API, and will deliver 
+approximate analog time to any web browser, curl, wget or similar tools. It 
+is understood that multiple users making simultaneous requests will not 
+receive identical results.
+
+A simple HTTP “GET” request is the only supported call to the server, the 
+response is a simple string in HTML format. Encryption is not supported for
+ NTDP, but rate limiting may be implemented.
+
+Authors' Addresses
+  Robert VandenBrink
+  Coherent Security
+  119 Woodstock St N, Box 39
+  Tavistock, ON
+  N0B2R0
+  CA
+
+  Phone: +1 519 589 1881
+  Email: rob@coherentsecurity.com 
+
+
+
+
+
+
+
+
