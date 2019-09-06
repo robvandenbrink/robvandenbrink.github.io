@@ -1,12 +1,3 @@
-
- 
-Home
-Services
-Publications
-Blog
-About Me
-
-
 Updated by: Rob VandenBrink
 
 Internet Engineering Task Force (IETF)                   PROPOSED STANDARD
