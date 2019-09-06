@@ -24,15 +24,15 @@ to acquire time primarily using their 5 senses.
 
 NTDP is unique in its output characteristics. When deployed on its intended
 platform, time and date are displayed in analogue format. The analogue 
-format is not prescribed, but the Reference Design for NTDP uses “dial” 
-style gauges for the analog display, however “arc” style gauges have also 
+format is not prescribed, but the Reference Design for NTDP uses dial 
+style gauges for the analog display, however arc style gauges have also 
 been used in the development process. The critical criteria for NTDP is 
 that time be displayed in a non-digital format.
 
 NTDP is always implemented in local time, to facilitate calculation of time 
 to Adult Beverages (TTAB) for local users. When implemented as an NTDB 
 server, this implementation guidance should be maintained. Oops, I just 
-said “should” in an RFC – I meant “will be maintained”. It is the 
+said should in an RFC – I meant will be maintained. It is the 
 responsibility of the NTDP client to associate themselves with an NTDP 
 server in their time zone.
 
@@ -40,7 +40,7 @@ Protocol Versions:
 NTP4	RFC5905		Network Time Protocol Version 4
 NTBP	RFC5905B	Network Time Protocol - Ballpark
 NTPC	RFC5905C	Reserved for IPv5
-NTDP	RFC5905D	Network Time Protocol – Derby Hat
+NTDP	RFC5905D	Network Time Protocol - Derby Hat
 
 Introduction
 
@@ -54,7 +54,7 @@ considerations. Too much volume could potentially make hat unwearable.
 Too low a volume would make the time inaudible to any but the wearer of the 
 hat. 
 
-The use of hammers, especially to drive a “Test Your Strength” style 
+The use of hammers, especially to drive a Test Your Strength style 
 carnival gauge is discouraged, as NTDP is meant for a wearable (on the head)
 platform.
 
@@ -86,19 +86,19 @@ For heat based implementations, the temperature range used to represent the
 various time scopes must be kept to within temperatures considered safe and 
 comfortable for the wearer of the hat.
 
-“Length of Open Flame” (LOF) should be discouraged as an output format in 
+Length of Open Flame (LOF) should be discouraged as an output format in 
 most implementations for the safety of both the wearer and third parties.
 
 Similarly, any pressure or hammer based implementations should consider the 
 safety of the hat wearer. It’s desired that the hat wearer should survive 
-the “noon experience”.
+the noon experience.
 
 Audio implementations should consider that all parties will need likely want
 to use their hearing after experiencing the NTDP output. It is recommended 
 that NTDP output be kept to within a range deemed safe. For instance, a 60-
 70db range has been used during protocol development, and we’re all still 
 fine. If someone would answer that phone we’d be fine anyway! Be sure to 
-use accurate acoustic measurement equipment to define “safe”.
+use accurate acoustic measurement equipment to define safe.
 
 Usability Considerations
 
@@ -117,15 +117,15 @@ several ways during mis-spent youth.
 Audio implementations based on amplitude must consider that third parties 
 will want to stay outside of the personal space of the hat wearer. 
 Implementations should be in the 60db range (outside the hat) for optimal 
-third party use. See “Safety Considerations” during both the design and 
+third party use. See Safety Considerations during both the design and 
 implementation processes.
 
 The use of NTDP as a Time Server
 
-NTDP can also be used as a time server, as it fully implements the “Ballpark
-NTP” (NTP-B) standard. Note however that the nature of the output should 
-remain analog. For instance “around noon” is an appropriate output, as is 
-“time for a beer” and “why aren’t you at work?”. “Quarter after two” is 
+NTDP can also be used as a time server, as it fully implements the Ballpark
+NTP (NTP-B) standard. Note however that the nature of the output should 
+remain analog. For instance around noon is an appropriate output, as is 
+time for a beer and why aren’t you at work?. Quarter after two is 
 considered an appropriate output, but only if it is meant to represent 
 everything from 14:05 to 14:25.
 
@@ -134,7 +134,7 @@ approximate analog time to any web browser, curl, wget or similar tools. It
 is understood that multiple users making simultaneous requests will not 
 receive identical results.
 
-A simple HTTP “GET” request is the only supported call to the server, the 
+A simple HTTP GET request is the only supported call to the server, the 
 response is a simple string in HTML format. Encryption is not supported for
  NTDP, but rate limiting may be implemented.
 
