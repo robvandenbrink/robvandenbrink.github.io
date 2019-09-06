@@ -22,16 +22,16 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Robert VandenBrink</o:Author>
   <o:LastAuthor>rvlab01</o:LastAuthor>
-  <o:Revision>5</o:Revision>
-  <o:TotalTime>8</o:TotalTime>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
   <o:Created>2019-09-06T15:50:00Z</o:Created>
-  <o:LastSaved>2019-09-06T15:55:00Z</o:LastSaved>
+  <o:LastSaved>2019-09-06T15:57:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>1025</o:Words>
-  <o:Characters>5844</o:Characters>
+  <o:Words>1016</o:Words>
+  <o:Characters>5795</o:Characters>
   <o:Lines>48</o:Lines>
   <o:Paragraphs>13</o:Paragraphs>
-  <o:CharactersWithSpaces>6856</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>6798</o:CharactersWithSpaces>
   <o:Version>15.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -42,6 +42,8 @@ w\:* {behavior:url(#default#VML);}
 <link rel=colorSchemeMapping href="RFC-NTDP_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:PunctuationKerning/>
@@ -722,6 +724,12 @@ span.HTMLPreformattedChar
 	mso-fareast-font-family:"Times New Roman";
 	mso-hansi-font-family:"Courier New";
 	mso-bidi-font-family:"Courier New";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -841,7 +849,7 @@ table.MsoTableGrid
    visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="RFC-NTDP_files/image001.png" o:title="Coherent_Security_Logo"/>
   </v:shape><![endif]--><![if !vml]><img width=222 height=94
-  src="RFC-NTDP_files/image003.png" alt="Coherent_Security_Logo" v:shapes="Picture_x0020_1"><![endif]></span></p>
+  src="RFC-NTDP_files/image002.png" alt="Coherent_Security_Logo" v:shapes="Picture_x0020_1"><![endif]></span></p>
   </td>
   <td width=51 valign=top style='width:.8in;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
@@ -944,8 +952,22 @@ table.MsoTableGrid
   Timer Derby Protocol (NTDP): Protocol and Algorithms Specific<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
-  <pre>Abstract</pre><pre><o:p>&nbsp;</o:p></pre><pre>The Network Time Protocol (NTP) is widely used to synchronize computer </pre><pre>clocks in the Internet.<span style='mso-spacerun:yes'>  </span>This document describes NTP version 4a, Network </pre><pre>Time Derby Protocol (NTDP), which is partially backwards compatible with NTP</pre><pre>version 4 (NTPv4) described in RFC 5905, NTP Version 3 (NPTv3) described in</pre><pre><span
-  class=MsoHyperlink><a href="https://tools.ietf.org/html/rfc1305">RFC 1305</a></span>, as well as previous versions of the protocol.</pre><pre><o:p>&nbsp;</o:p></pre><pre>NTDP is created for a mobile platform, namely a Derby Hat.<span style='mso-spacerun:yes'>  </span>NTDP uses </pre><pre>standard NTP protocols to obtain time from Servers.<span style='mso-spacerun:yes'>  </span>NTDP clients are meant </pre><pre>to acquire time primarily using their 5 senses.</pre><pre><o:p>&nbsp;</o:p></pre><pre>NTDP is unique in its output characteristics.<span style='mso-spacerun:yes'>  </span>When deployed on its intended</pre><pre>platform, time and date are displayed in analogue format.<span style='mso-spacerun:yes'>  </span>The analogue </pre><pre>format is not prescribed, but the Reference Design for NTDP uses “dial” </pre><pre>style gauges for the analog display, however “arc” style gauges have also </pre><pre>been used in the development process.<span style='mso-spacerun:yes'>  </span>The critical criteria for NTDP is </pre><pre>that time be displayed in a non-digital format.</pre><pre><o:p>&nbsp;</o:p></pre><pre>NTDP is always implemented in local time, to facilitate calculation of time </pre><pre>to Adult Beverages (TTAB) for local users.<span style='mso-spacerun:yes'>  </span>When implemented as an NTDB </pre><pre>server, this implementation guidance should be maintained.<span style='mso-spacerun:yes'>  </span>Oops, I just </pre><pre>said “should” in an RFC – I meant “will be maintained”.<span style='mso-spacerun:yes'>  </span>It is the </pre><pre>responsibility of the NTDP client to associate themselves with an NTDP </pre><pre>server in their time zone.</pre><pre><o:p>&nbsp;</o:p></pre><pre>Protocol Versions:</pre><pre>NTP4<span style='mso-spacerun:yes'>   </span>RFC5905<span style='mso-spacerun:yes'>    </span>Network Time Protocol Version 4</pre><pre>NTBP<span style='mso-spacerun:yes'>   </span>RFC5905B<span style='mso-spacerun:yes'>   </span>Network Time Protocol - Ballpark</pre><pre>NTPC<span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'> </span>RFC5905C<span style='mso-spacerun:yes'>   </span>Reserved for IPv5<o:p></o:p></pre><pre>NTDP<span style='mso-spacerun:yes'>   </span>RFC5905D<span style='mso-spacerun:yes'>   </span>Network Time Protocol – Derby Hat</pre><pre><o:p>&nbsp;</o:p></pre></td>
+  <pre>Abstract</pre><pre><o:p>&nbsp;</o:p></pre><pre>The Network Time Protocol (NTP) is widely used to synchronize computer </pre><pre><span
+  class=GramE>clocks</span> in the Internet. This document describes NTP version 4a, Network </pre><pre>Time Derby Protocol (NTDP), which is partially backwards compatible with NTP</pre><pre>version 4 (NTPv4) described in RFC 5905, NTP Version 3 (NPTv3) described in</pre><pre><span
+  class=MsoHyperlink><a href="https://tools.ietf.org/html/rfc1305">RFC 1305</a></span>, as well as previous versions of the protocol.</pre><pre><o:p>&nbsp;</o:p></pre><pre>NTDP is created for a mobile platform, namely a Derby Hat. NTDP uses </pre><pre><span
+  class=GramE>standard</span> NTP protocols to obtain time from Servers. NTDP clients are meant </pre><pre><span
+  class=GramE>to</span> acquire time primarily using their 5 senses.</pre><pre><o:p>&nbsp;</o:p></pre><pre>NTDP is unique in its output characteristics. When deployed on its intended</pre><pre><span
+  class=GramE>platform</span>, time and date are displayed in analogue format. The analogue </pre><pre>format is not prescribed, but the Reference Design for NTDP uses “dial” </pre><pre>style gauges for the analog display, however “arc” style gauges have also </pre><pre><span
+  class=GramE>been</span> used in the development process. The critical criteria for NTDP is </pre><pre><span
+  class=GramE>that</span> time be displayed in a non-digital format.</pre><pre><o:p>&nbsp;</o:p></pre><pre>NTDP is always implemented in local time, to facilitate calculation of time </pre><pre><span
+  class=GramE>to</span> Adult Beverages (TTAB) for local users. When implemented as an NTDB </pre><pre><span
+  class=GramE>server</span>, this implementation guidance should be maintained. Oops, I just </pre><pre><span
+  class=GramE>said</span> “should” in an RFC – I meant “will be maintained”. It is the </pre><pre>responsibility of the NTDP client to associate themselves with an NTDP </pre><pre><span
+  class=GramE>server</span> in their time zone.</pre><pre><o:p>&nbsp;</o:p></pre><pre>Protocol Versions:</pre><pre>NTP4<span
+  style='mso-tab-count:1'>    </span>RFC5905<span style='mso-tab-count:2'>        </span>Network Time Protocol Version 4</pre><pre>NTBP<span
+  style='mso-tab-count:1'>    </span>RFC5905B<span style='mso-tab-count:1'>       </span>Network Time Protocol - Ballpark</pre><pre>NTPC<span
+  style='mso-tab-count:1'>    </span>RFC5905C<span style='mso-tab-count:1'>       </span>Reserved for IPv5<o:p></o:p></pre><pre>NTDP<span
+  style='mso-tab-count:1'>    </span>RFC5905D<span style='mso-tab-count:1'>       </span>Network Time Protocol – Derby Hat</pre><pre><o:p>&nbsp;</o:p></pre></td>
  </tr>
  <tr style='mso-yfti-irow:1'>
   <td width=472 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
@@ -962,26 +984,25 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Further
   development of NTDP will be focused on different analogue display <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>formats.<span
-  style='mso-spacerun:yes'>  </span>For instance, pumps could be used to vary
-  pressure to display time. <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>formats</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>. For instance, pumps
+  could be used to vary pressure to display time. <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Piezoelectric
-  mechanisms could be used to drive audio or visible displays.<span
-  style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+  mechanisms could be used to drive audio or visible displays. <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Note that
   for audio output, volume and frequency are both key <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>considerations.<span
-  style='mso-spacerun:yes'>  </span>Too much volume could potentially make hat
-  unwearable.<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>considerations</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>. Too much volume could
+  potentially make hat unwearable. <span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Too low a
   volume would make the time inaudible to any but the wearer of the <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>hat.<span
-  style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>hat</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>. <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
@@ -991,30 +1012,31 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>carnival gauge
   is discouraged, as NTDP is meant for a wearable (on the head)<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>platform.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>platform</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Heat is
-  another mechanism that could be used for NTDP.<span
-  style='mso-spacerun:yes'>  </span>For third party <o:p></o:p></span></p>
+  another mechanism that could be used for NTDP. For third party <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>use of the
   output, this would need to be tied to a thermometer display of <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>some
-  kind.<span style='mso-spacerun:yes'>  </span>Note again that range is
-  important.<span style='mso-spacerun:yes'>  </span>If the range is too low or <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>some</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> kind. Note again that
+  range is important. If the range is too low or <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>too high, a
   temperature based implementation of NTDP can easily cause injury <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>to the
-  wearer of the hat.<span style='mso-spacerun:yes'>  </span>In addition, the
-  use of open flame in temperature <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>to</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> the wearer of the hat. In
+  addition, the use of open flame in temperature <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>based
-  implementations should be avoided, for that same reason.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>based</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> implementations should be
+  avoided, for that same reason.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   </td>
@@ -1035,15 +1057,15 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>All
   implementations of NTDP are intended for deployment on a Derby Hat <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>platform.<span
-  style='mso-spacerun:yes'>  </span>This introduces a size constraint.<span
-  style='mso-spacerun:yes'>  </span>All implementations must fit <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>platform</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>. This introduces a size
+  constraint. All implementations must fit <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>on or in a
   reference sized hat, and all implementations must result in the <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>hat still
-  being wearable.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>hat</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> still being wearable.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
@@ -1058,7 +1080,8 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>and any
   third parties should be considered in the design and implementation <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>process.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>process</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
@@ -1073,51 +1096,54 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>various time
   scopes must be kept to within temperatures considered safe and <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>comfortable
-  for the wearer of the hat.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>comfortable</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> for the wearer of the
+  hat.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>“Length of
   Open Flame” (LOF) should be discouraged as an output format in <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>most
-  implementations for the safety of both the wearer and third parties.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>most</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> implementations for the
+  safety of both the wearer and third parties.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Similarly,
   any pressure or hammer based implementations should consider the <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>safety of
-  the hat wearer.<span style='mso-spacerun:yes'>  </span>It’s desired that the
-  hat wearer should survive <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>safety</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> of the hat wearer. It’s
+  desired that the hat wearer should survive <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>the “noon
-  experience”.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>the</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> “noon experience”.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Audio implementations
   should consider that all parties will need likely want<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>to use their
-  hearing after experiencing the NTDP output.<span style='mso-spacerun:yes'> 
-  </span>It is recommended <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>to</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> use their hearing after
+  experiencing the NTDP output. It is recommended <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>that NTDP
-  output be kept to within a range deemed safe.<span style='mso-spacerun:yes'> 
-  </span>For instance, a 60-<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>that</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> NTDP output be kept to
+  within a range deemed safe. For instance, a 60-<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>70db range
   has been used during protocol development, and we’re all still <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>fine.<span
-  style='mso-spacerun:yes'>  </span>If someone would answer that phone we’d be
-  fine anyway!<span style='mso-spacerun:yes'>  </span>Be sure to <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>fine</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>. If someone would answer
+  that phone we’d be fine anyway! Be sure to <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>use accurate
-  acoustic measurement equipment to define “safe”.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>use</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> accurate acoustic
+  measurement equipment to define “safe”.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   </td>
@@ -1136,7 +1162,8 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>and any
   third parties should be considered in the design and implementation <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>process.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>process</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'>.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
@@ -1148,9 +1175,9 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Audio
   implementations based on frequency should be implemented within the <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>range of
-  human hearing.<span style='mso-spacerun:yes'>  </span>NTDP is not meant for
-  dogs or whales.<span style='mso-spacerun:yes'>  </span>Also <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>range</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> of human hearing. NTDP is
+  not meant for dogs or whales. Also <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>consider the
   shortened audio range that most security professionals have, as<o:p></o:p></span></p>
@@ -1158,27 +1185,28 @@ table.MsoTableGrid
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>many are of
   advanced years, and most have damaged their hearing in any of <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>several ways
-  during mis-spent youth.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>several</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> ways during <span
+  class=SpellE>mis</span>-spent youth.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Audio
   implementations based on amplitude must consider that third parties <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>will want to
-  stay outside of the personal space of the hat wearer.<span
-  style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>will</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> want to stay outside of
+  the personal space of the hat wearer. <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>Implementations
   should be in the 60db range (outside the hat) for optimal <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>third party
-  use.<span style='mso-spacerun:yes'>  </span>See “Safety Considerations”
-  during both the design and <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>third</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> party use. See “Safety
+  Considerations” during both the design and <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>implementation
-  processes.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>implementation</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> processes.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   </td>
@@ -1195,46 +1223,45 @@ table.MsoTableGrid
   also be used as a time server, as it fully implements the “Ballpark<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>NTP” (NTP-B)
-  standard.<span style='mso-spacerun:yes'>  </span>Note however that the nature
-  of the output should <o:p></o:p></span></p>
+  standard. Note however that the nature of the output should <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>remain
-  analog.<span style='mso-spacerun:yes'>  </span>For instance “around noon” is
-  an appropriate output, as is <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>remain</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> analog. For instance
+  “around noon” is an appropriate output, as is <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>“time for a
-  beer” and “why aren’t you at work?”.<span style='mso-spacerun:yes'> 
-  </span>“Quarter after two” is <o:p></o:p></span></p>
+  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>“<span
+  class=GramE>time</span> for a beer” and “why aren’t you at work?”. “Quarter
+  after two” is <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>considered
   an appropriate output, but only if it is meant to represent <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>everything
-  from 14:05 to 14:25.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>everything</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> from 14:05 to 14:25.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>NTDP is
   referenced using a standard restful API, and will deliver <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>approximate
-  analog time to any web browser, curl, wget or similar tools.<span
-  style='mso-spacerun:yes'>  </span>It <o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>approximate</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> analog time to any web
+  browser, curl, <span class=SpellE>wget</span> or similar tools. It <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>is
   understood that multiple users making simultaneous requests will not <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>receive
-  identical results.<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>receive</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> identical results.<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'>A simple
   HTTP “GET” request is the only supported call to the server, the <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:10.0pt;font-family:"Courier New"'>response is
-  a simple string in HTML format.<span style='mso-spacerun:yes'> 
-  </span>Encryption is not supported for<o:p></o:p></span></p>
+  normal'><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New"'>response</span></span><span
+  style='font-size:10.0pt;font-family:"Courier New"'> is a simple string in
+  HTML format. Encryption is not supported for<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><span
   style='mso-spacerun:yes'> </span>NTDP, but rate limiting may be implemented.<o:p></o:p></span></p>
@@ -1251,29 +1278,33 @@ table.MsoTableGrid
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>Robert
-  VandenBrink<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>Robert VandenBrink<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>Coherent Security<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>Coherent Security<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>119 Woodstock St
-  N, Box 39<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>119 Woodstock St N, Box 39<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>Tavistock, ON<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span><span class=SpellE>Tavistock</span>, ON<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>N0B2R0<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>N0B2R0<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>CA<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>CA<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
@@ -1281,13 +1312,13 @@ table.MsoTableGrid
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>Phone: +1 519 589
-  1881<o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>Phone: +1 519 589 1881<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
   style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
-  "Times New Roman"'><span style='mso-spacerun:yes'>   </span>Email:
-  rob@coherentsecurity.com <o:p></o:p></span></p>
+  "Times New Roman"'><span style='mso-spacerun:yes'> </span><span
+  style='mso-spacerun:yes'> </span>Email: rob@coherentsecurity.com <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:10.0pt;font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
   </td>
