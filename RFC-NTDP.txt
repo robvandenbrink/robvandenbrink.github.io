@@ -32,7 +32,7 @@ that time be displayed in a non-digital format.
 NTDP is always implemented in local time, to facilitate calculation of time 
 to Adult Beverages (TTAB) for local users. When implemented as an NTDB 
 server, this implementation guidance should be maintained. Oops, I just 
-said should in an RFC – I meant will be maintained. It is the 
+said SHOULD in an RFC - I meant WILL be maintained. It is the 
 responsibility of the NTDP client to associate themselves with an NTDP 
 server in their time zone.
 
@@ -90,14 +90,14 @@ Length of Open Flame (LOF) should be discouraged as an output format in
 most implementations for the safety of both the wearer and third parties.
 
 Similarly, any pressure or hammer based implementations should consider the 
-safety of the hat wearer. It’s desired that the hat wearer should survive 
+safety of the hat wearer. It is desired that the hat wearer should survive 
 the noon experience.
 
 Audio implementations should consider that all parties will need likely want
 to use their hearing after experiencing the NTDP output. It is recommended 
 that NTDP output be kept to within a range deemed safe. For instance, a 60-
-70db range has been used during protocol development, and we’re all still 
-fine. If someone would answer that phone we’d be fine anyway! Be sure to 
+70db range has been used during protocol development, and we are all still 
+fine. If someone would answer that phone we would be fine anyway! Be sure to 
 use accurate acoustic measurement equipment to define safe.
 
 Usability Considerations
@@ -125,7 +125,7 @@ The use of NTDP as a Time Server
 NTDP can also be used as a time server, as it fully implements the Ballpark
 NTP (NTP-B) standard. Note however that the nature of the output should 
 remain analog. For instance around noon is an appropriate output, as is 
-time for a beer and why aren’t you at work?. Quarter after two is 
+time for a beer and why aren't you at work?. Quarter after two is 
 considered an appropriate output, but only if it is meant to represent 
 everything from 14:05 to 14:25.
 
