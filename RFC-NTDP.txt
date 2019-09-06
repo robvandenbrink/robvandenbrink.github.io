@@ -125,7 +125,7 @@ The use of NTDP as a Time Server
 NTDP can also be used as a time server, as it fully implements the Ballpark
 NTP (NTP-B) standard. Note however that the nature of the output should 
 remain analog. For instance around noon is an appropriate output, as is 
-time for a beer and why aren't you at work?. Quarter after two is 
+time for a beer and why arent you at work?. Quarter after two is 
 considered an appropriate output, but only if it is meant to represent 
 everything from 14:05 to 14:25.
 
